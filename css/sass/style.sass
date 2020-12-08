@@ -1,0 +1,687 @@
+$firstcolor: #20355d
+$secondcolor: #b92d2d
+$thirdclor: #707174
+$maxMobile: "(max-width: 576px)"
+$maxSmall: "(max-width: 768px)"
+$minSmall: "(min-width: 576px)"
+$minMedium: "(min-width: 768px)"
+$minLarge: "(min-width: 992px)"
+$maxLarge: "(max-width: 992px)"
+@mixin prefixer($property, $value, $prefixes: ())
+    @each $prefix in $prefixes
+        #{'-' + $prefix + '-' + $property}: $value 
+*
+    box-sizing: border-box        
+body
+    overflow-x: hidden 
+    @media #{$maxMobile}, #{$maxSmall}, #{$maxLarge}
+        overflow-x: hidden
+.main-button
+    background-color: $firstcolor
+    border: 1px solid $firstcolor
+    border-radius: 12px
+    padding: 3px
+    width: 200px
+    color: #fff
+    font-size: 20px  
+.devider
+    border-top: 1px solid $firstcolor
+input:focus,textarea:focus
+    box-shadow: 0 0 0 0.1rem $firstcolor !important
+    outline: none
+// --------- start homepage --------------------------------------
+nav
+    .navbar-nav
+        .nav-item
+            .link-0
+                font-size: 25px
+            .link-1
+                margin-right: 50px    
+            .nav-link
+                color: $firstcolor
+                .modal
+                    .modal-dialog
+                        max-width: 600px
+                        color: $firstcolor
+                        .modal-header
+                            h5
+                                img
+                                    max-width: 10%
+                                    display: inline    
+                                p
+                                    font-weight: 500    
+                                    margin: 0
+                                    font-size: 15px
+                                    display: inline
+                        .modal-body
+                            h4
+                                font-size: 18px
+                                margin-top: 30px
+                                &:not(:first-of-type)
+                                    margin-top: 100px  
+                            button
+                                display: block
+                                font-size: 10px
+                                width: 150px
+                                margin: auto
+                            .first
+                                    transform: translateY(5px)                              
+.section-1
+    .container
+        padding: 70px 0 30px 0 
+        color: $firstcolor
+    .item
+        margin-top: 10px
+    h1
+        font-size: 36px
+        font-weight: bold  
+        @media #{$maxSmall}
+            font-size: 25px    
+    h2
+        font-size: 36px 
+        font-weight: 400    
+        margin-bottom: 100px
+        @media #{$maxSmall}
+            font-size: 25px
+    a
+        color: #fff
+        text-decoration: none        
+    .item-5
+        margin-top: 0px
+    .item-8
+        margin-top: 100px
+        i
+            border: 1px solid $firstcolor
+            border-radius: 50%
+            padding: 15px  
+            cursor: pointer      
+.section-2
+    .container
+        color: $firstcolor
+        padding: 60px 0 
+        h4
+            font-weight: 400
+        img
+            max-width: 50%  
+        .client-3
+            @media #{$maxMobile}
+                max-width: 25%    
+        .carousel-item       
+            img
+                visibility: hidden 
+            .carousel-caption
+                color: $firstcolor
+                @media #{$minLarge}
+                    transform: translateY(-150px)
+                h5
+                    font-size: 30px
+                    @media #{$maxSmall}
+                        font-size: 20px
+                    span
+                        font-size: 50px
+                        @media #{$maxSmall}
+                            font-size: 30px 
+                p
+                    font-size: 20px 
+                    font-weight: 500
+                    @media #{$maxSmall}
+                        font-size: 15px      
+        i
+            color: $firstcolor                 
+.section-3
+    .container
+        padding: 40px 0
+        color: $firstcolor
+        .intro
+            width: 50%
+            margin-bottom: 40px
+            font-size: 16px
+            font-weight: 500     
+        .row-0
+            margin-bottom: 60px 
+            i
+                @media #{$maxLarge}
+                    margin-bottom: 20px
+            button
+                font-size: 12px
+                margin-top: 5px
+                @media #{$minLarge} 
+                    width: 100%
+                @media #{$maxLarge}
+                    margin-bottom: 20px    
+            p
+                font-size: 20px
+                font-weight: 500  
+                @media #{$minLarge} 
+                    width: 80%
+.section-4
+    .container
+        border-bottom: 1px solid $firstcolor
+        color: $firstcolor
+        padding: 80px 0      
+        h3
+            margin-bottom: 60px          
+        img
+            max-width: 100%    
+            margin-bottom: 60px
+footer
+    .container
+        color: $firstcolor
+        padding: 60px 0
+        img
+            margin-bottom: 30px
+        ul
+            li
+                a
+                    line-height: 3.5
+                    color: $firstcolor  
+        i
+            &:not(:first-of-type)
+                margin-left: 10px
+            @media #{$minSmall}
+                margin-top: 50px               
+    .copy-right
+        background-color: $firstcolor
+        padding: 20px 0
+        .container
+            padding: 0  
+        p
+            color: #fff
+            font-size: 25px     
+            margin-bottom: 0     
+// --------- start index-2 --------------------------------------
+.section-5
+    .container
+        padding: 121px 0
+        color: $firstcolor
+        h3
+            width: 60%
+            font-weight: 400
+            font-size: 29px
+            margin-bottom: 30px
+            @media #{$maxLarge}   
+                font-size: 25px 
+            @media #{$maxSmall}
+                font-size: 22px    
+        p
+            width: 40%
+            font-weight: 400
+            font-size: 25px
+            margin-bottom: 50px
+            @media #{$maxLarge}   
+                font-size: 22px
+            @media #{$maxSmall}
+                font-size: 18px    
+        button
+            font-size: 25px
+            width: 70%
+            margin-bottom: 20px
+// --------- start index-3 --------------------------------------            
+.section-6
+    .container
+        h3
+            width: 70%
+        p
+            width: 70%
+            margin-bottom: 0px      
+.section-7
+    .container 
+        hr
+            transform: translateY(45px)
+            border: 0.5px solid $firstcolor
+        .circle 
+            padding: 0px 
+                                         
+            .form-indecator
+                width: 70px
+                padding: 7px
+                background-color: $firstcolor
+                border: 1px solid $firstcolor
+                border-radius: 50%
+                color: #ffffff
+                font-size: 30px  
+                margin-bottom: 70px 
+                cursor: pointer
+                transition: all 0.3s ease-in-out
+                &:hover
+                    background-color: $secondcolor
+                    border: 1px solid $secondcolor
+                p
+                    margin: 0
+        .active
+            .form-indecator
+                background-color: $secondcolor
+                border: 1px solid $secondcolor                
+.section-8
+    .container
+        max-width: 90%
+        @media #{$minLarge}
+            max-width: 1160px
+        padding: 80px 0
+        .form-control
+            width: 400px
+            padding: 25px
+            border: 1.5px solid #d1d1d1
+            color: #d1d1d1 !important
+            margin-bottom: 30px
+        .table-1
+            display: none
+            table
+                th,td
+                    border: 1px solid #666666  
+                    color: $firstcolor
+                    font-size: 20px
+                    @media #{$maxLarge}
+                    font-size: 16px
+                    @media #{$maxSmall}
+                        font-size: 14px
+                    @media #{$maxMobile}
+                        font-size: 8px
+                th
+                    background-color: $firstcolor
+                    color: #c2c4c5
+                    font-weight: 400
+                tr
+                    th,td
+                        padding: 40px 25px 25px
+                        @media #{$maxLarge}
+                            padding: 20px 20px 20px
+                        @media #{$maxSmall}
+                            padding: 20px 10px 10px
+                        @media #{$maxMobile}
+                            padding: 0
+                tr
+                    th
+                        padding: 20px
+                        @media #{$maxLarge}
+                            padding: 15px
+                        @media #{$maxSmall}
+                            padding: 10px
+                        @media #{$maxMobile}
+                            padding: 0
+                    td
+                        padding: 20px 25px 25px
+                        @media #{$maxLarge}
+                            padding: 30px 20px 20px
+                        @media #{$maxSmall}
+                            padding: 20px 10px 10px
+                        @media #{$maxMobile}
+                            padding: 0     
+        .table-2
+            display: none
+            table
+                margin: 15px 0 100px 0
+                border-collapse: separate
+                border-spacing: 0px 16px
+                table-layout: fixed
+                tr
+                    td
+                        border: none 
+                        color: $firstcolor
+                        font-size: 20px
+                        @media #{$maxLarge}
+                            font-size: 15px
+                        @media #{$maxSmall}
+                            font-size: 10px
+                        @media #{$maxMobile}
+                            font-size: 8px
+                    .td-1
+                        border: 1px solid #666666
+                        background-color: $firstcolor 
+                        color: #c2c4c5
+                        font-weight: 400
+                        font-size: 15px
+                        padding: 25px
+                        @media #{$maxLarge}
+                            font-size: 10px
+                            padding: 12px
+                        @media #{$maxSmall}
+                            font-size: 8px
+                            padding: 10px
+                        @media #{$maxMobile}
+                            font-size: 5px
+                            padding: 0
+                    .td-2
+                        border: 1px solid #666666
+                        padding: 12px 0
+                        @media #{$maxLarge}
+                            padding: 20px 0
+                        @media #{$maxSmall}
+                            padding: 10px 0
+                        @media #{$maxMobile}
+                            padding: 0
+                    .td-3
+                        border-top: 1px solid #666666     
+                    .td-4
+                        border-bottom: 1px solid #666666 
+                    .td-5     
+                        a
+                            color: $firstcolor
+                            text-decoration: underline            
+        .submit
+            display: none
+            button
+                font-size: 25px
+                padding: 7px
+                width: 250px
+                margin-bottom: 20px
+                &:not(:first-of-type)
+                    @media #{$minSmall}
+                        margin-left: 20px
+                a
+                    color: #fff
+                    text-decoration: none        
+        .next
+            .total
+                display: none
+                p
+                    color: $secondcolor
+                    margin: 0
+                    font-size: 20px
+            .loading
+                display: none    
+                span
+                    color: $secondcolor
+                    font-weight: bold
+                    font-size: 20px
+            .next-page
+                button
+                    width: 110px
+                    padding: 10px 0
+                    font-size: 25px
+                    font-weight: bold
+                    margin-top: 15px
+                    border-radius: 15px
+// --------- start index-4 --------------------------------------                    
+.section-9
+    .container
+        color: $firstcolor
+        padding: 100px 0 
+        h3
+            font-weight: bold
+            margin-bottom: 30px
+        .form-control-lg
+            width: 400px
+            margin: auto
+            margin-bottom: 30px 
+            color: #b5b5b5
+            font-size: 15px  
+            @media #{$maxMobile}
+                width: 300px
+        button
+            font-size: 15px
+            width: 180px
+            &:not(:first-of-type)
+                margin-left: 2px
+            &:not(:last-of-type)
+                margin-right: 2px  
+            @media #{$minSmall}
+                &:not(:first-of-type)
+                    margin-left: 10px
+                &:not(:last-of-type)
+                    margin-right: 10px      
+.section-10
+    .container
+        width: 80%
+        padding: 100px 0
+        color: $firstcolor
+        .col-12
+            margin-bottom: 40px
+            h3
+                font-weight: bold
+                margin-bottom: 30px
+            img
+                max-width: 20%
+                @media #{$maxMobile} 
+                    margin-bottom: 30px 
+            .company
+                max-width: 66%
+                margin-bottom: 20px   
+            p   
+                font-weight: 500
+                @media (min-width: 1200px)
+                    width: 60%
+            a
+                color: $firstcolor
+                text-decoration: underline     
+// --------- start index-5 --------------------------------------                
+.section-11
+    .container
+        color: $firstcolor
+        padding: 80px 0 40px 0
+        img
+            max-width: 100%    
+        h2
+            font-size: 40px
+            font-weight: bold
+        p
+            font-size: 30px
+            font-weight: 500
+            line-height: 1.2    
+.section-12
+    background-color: $firstcolor
+    .container
+        .col-12
+            padding: 20px 0
+            color: #fff
+            i
+                margin-bottom: 20px
+            p
+                font-size: 25px
+        @media #{$minMedium}   
+            .content-1
+                border-right: 4px solid #fff
+            .content-2
+                border: 0 4px 0 4px solid #fff
+            .content-3
+                border-left: 4px solid #fff
+        @media #{$maxMobile}
+            .content-1, .content-2, .content-3
+                border-top: 4px solid #fff        
+.section-13
+    .container
+        color: $firstcolor
+        padding: 30px 0
+        .content
+            margin-bottom: 40px
+            position: relative
+            p
+                font-size: 19px
+                font-weight: 500
+                line-height: 1.2
+                margin-bottom: 28px
+            button
+                font-size: 12px   
+                width: 180px
+                padding: 2px
+                position: absolute
+                bottom: 0
+.section-14
+    background-color: $firstcolor
+    padding: 40px 0
+    .container                
+        h4
+            color: #fff
+        p
+            color: #cccccc
+            font-size: 20px 
+        img
+            max-width: 40%       
+            margin-bottom: 20px
+.section-15
+    .container
+        padding: 30px 0
+        color: $firstcolor
+        h4
+            font-weight: bolder
+            font-size: 30px
+            margin-bottom: 30px
+        img
+            max-width: 15%
+            margin-bottom: 30px
+        p
+            width: 50%
+            font-weight: 500    
+// --------- start index-6 --------------------------------------            
+.section-16
+    .container
+        padding: 100px 0
+        input, textarea
+            width: 350px
+            padding: 25px 15px
+            border: 1.5px solid #b5b5b5
+            border-radius: 10px
+            transition: all 0.15s ease-in-out
+            
+            @media #{$minSmall}
+                width: 450px
+        textarea
+            padding-top: 10px
+        button
+            font-size: 25px
+            padding: 10px 0 
+            width: 270px 
+            border-radius: 15px    
+// --------- start index-7 --------------------------------------              
+.section-17
+    .container
+        padding: 40px 0
+        @media #{$maxMobile}
+            width: 90%
+        .row
+            border: 1.5px solid #bebdbd
+            border-radius: 10px
+            .col-12
+                padding: 0
+                .title
+                    padding: 5px 40px
+                    border: none
+                    border-radius: 10px
+                    width: 100%
+                    background: linear-gradient(#fcfcfc,#c5c4c4)
+                    p
+                        color: $firstcolor
+                        font-size: 30px
+                        width: 100%
+                        margin: 0
+                        @media #{$maxLarge}
+                            font-size: 25px
+                        @media #{$maxSmall}
+                            font-size: 18px
+                        @media #{$maxMobile}
+                            font-size: 12px    
+                .desc
+                    padding: 1px 40px
+                    @media #{$minMedium}
+                        height: 500px
+                    p
+                        color: #999999
+                        font-size: 25px  
+                        line-height: 1.2
+                        @media #{$minLarge}
+                            width: 65%
+                        @media #{$maxSmall}
+                            font-size: 20px 
+                        @media #{$maxMobile}
+                            font-size: 12px        
+                .desc-1
+                    display: none
+// --------- start index-8 --------------------------------------                    
+.section-18
+    .container
+        padding: 40px 0
+        @media #{$maxMobile}
+            width: 90%
+        table
+            td
+                padding: 5px
+                color: $firstcolor
+                font-weight: 500
+                border: 1px solid $thirdclor
+                font-size: 20px
+                @media #{$maxMobile}
+                    font-size: 10px
+            .tr-rotate
+                max-width: 30px
+                .rotate
+                    max-width: 30px
+                    p
+                        transform: matrix(0 ,-1 ,1 ,0 , 0, 200)
+                        font-size: 30px
+                        @media #{$maxMobile}
+                            font-size: 20px
+                            transform: matrix(0 ,-1 ,1 ,0 , 0, 130)
+                .medic
+                    p
+                        transform: matrix(0 ,-1 ,1 ,0 , 0, 420)
+                        @media #{$maxMobile}
+                            font-size: 20px
+                            transform: matrix(0 ,-1 ,1 ,0 , 0, 300)      
+            .gray
+                background: $thirdclor   
+            .head
+                background-color: $firstcolor
+                .head-td
+                    color: #fff 
+        .submit
+            button
+                font-size: 18px
+                font-weight: 500
+                padding: 0
+                width: 200px
+                margin-bottom: 20px
+                &:not(:first-of-type)
+                    @media #{$minSmall}
+                        margin-left: 20px 
+                i
+                    margin-right: 8px     
+// --------- start index-9 --------------------------------------                         
+.section-19
+    .container
+        padding: 30px 0
+        color: $firstcolor
+        .part-1
+            margin-bottom: 50px
+            h3
+                font-weight: 400
+            p
+                font-weight: 500
+                line-height: 1.2
+                font-size: 17px
+                margin-bottom: 80px
+                width: 62%
+            i
+                border: 1px solid $firstcolor
+                border-radius: 50%
+                padding: 15px  
+                cursor: pointer  
+                margin-bottom: 150px
+            span
+                font-weight: 500  
+        .part-2
+            strong
+                font-weight: 500
+            p
+                width: 65%      
+                line-height: 1.2
+                margin-top: 5px 
+                margin-bottom: 30px     
+.section-20
+    .container
+        padding: 160px 0
+        color: $firstcolor
+        h3
+            font-weight: 400
+        p
+            font-weight: 500
+            line-height: 1.2
+            font-size: 17px
+            margin-bottom: 80px
+            width: 70%
+        img
+            max-width: 60%   
+            margin-bottom: 30px 
+            margin-top: 30px
+        span
+            display: block    
+// --------- end website --------------------------------------

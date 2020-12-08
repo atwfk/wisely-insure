@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wisely insure</title>
+    <!------------------- CSS links ------------------->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!------------------- JS links ------------------->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.2/angular-route.min.js"></script>
+</head>
+<body>
+    <!------------------- start header ------------------->
+    <header>
+        <!------------------- start navbar ------------------->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" title="logo" width="200"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link link-0" href="#!/index-2">Get Quote<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-0" href="#!/index-5">Companies Directory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contact" class="nav-link link-0 link-1" href="#!/index-6">Contact</a id="contact">
+                        </li>
+                        <li class="nav-item hide-1">
+                            <a class="nav-link">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="main-button" data-toggle="modal" data-target="#exampleModalLong">
+                                    Try Wisely
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    <img src="images/person.jpg" alt="person">
+                                                    <p>Hi there, Let us help you to compare and get the best
+                                                        insurance benefits and prices</p>
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <h4>Health Insurance</h4>
+                                                <button class="main-button">Customize your own plan</button>
+                                                <button class="main-button first">Compare plans now</button>
+                                                <h4>Life & Disability Insurance</h4>
+                                                <button class="main-button">Customize your own plan</button>
+                                                <button class="main-button first">Compare plans now</button>
+                                                <h4>General Insurance</h4>
+                                                <button class="main-button">Get Quote</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------------------- end navbar ------------------->
+    </header>
+    <!------------------- end header ------------------->
+    <!------------------- start main ------------------->
+    <main ng-view>
+       
+    </main>
+    <!------------------- end main ------------------->
+    <!------------------- start footer ------------------->
+    <footer>
+        <div class="container foot">
+            <div class="row">
+                <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+                    <img src="images/logo.png" alt="logo" width="200">
+                </div>
+                <div class="col-12 col-lg-3 col-sm-4 text-center text-sm-left">
+                    <ul class="list-unstyled">
+                        <li><a href="#!/index-2">Get Quote</a></li>
+                        <li><a href="#">Companies Directory</a></li>
+                        <li><a href="#!/index-3">Be a Partner</a></li>
+                        <li><a href="#!/index-6">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-4 text-center text-sm-left">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Take a Survey</a></li>
+                        <li><a href="#!/index-7">FAQ</a></li>
+                        <li><a href="#">Advertise With Us</a></li>
+                        <li><a href="#!/index-9">Work With Wisely</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-4 text-center text-sm-left">
+                    <ul class="list-unstyled">
+                        <li><a href="#" onclick="scrl(0)">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <div>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right text-center">
+            <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>All Rights Reserved @ WiselyInsure 2017</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!------------------- end footer ------------------->
+    <!------------------- JS links ------------------->
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
